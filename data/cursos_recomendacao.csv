@@ -1,0 +1,101 @@
+id,perfil,area_interesse,nivel_atual,curso_recomendado,duracao_horas,custo,modalidade,score_relevancia
+1,tech_avancado,ia_ml,avancado,Deep Learning Especializado,120,2500,online,95.5
+2,tradicional,tecnologia_basica,iniciante,Introducao a Informatica,40,300,presencial,88.2
+3,digital_intermediario,marketing_digital,intermediario,Growth Marketing Avancado,80,1200,hibrido,91.7
+4,tradicional,qualificacao_tecnica,iniciante,Automacao Industrial Basica,60,500,presencial,85.3
+5,tech_avancado,desenvolvimento,avancado,Arquitetura de Software,100,2200,online,94.8
+6,digital_intermediario,financas,intermediario,Analise de Dados Financeiros,70,1500,online,89.6
+7,digital_intermediario,vendas,intermediario,CRM e Automacao de Vendas,50,900,hibrido,87.4
+8,tradicional,logistica,iniciante,Gestao de Transporte,45,400,presencial,84.1
+9,tech_avancado,ciencia_dados,avancado,MLOps e Deploy de Modelos,110,2400,online,96.2
+10,digital_intermediario,gestao_pessoas,intermediario,People Analytics,65,1100,online,88.9
+11,digital_intermediario,engenharia,intermediario,Industria 4.0,90,1800,hibrido,90.5
+12,tradicional,atendimento,iniciante,Comunicacao Efetiva,35,250,presencial,82.7
+13,tech_avancado,produto,avancado,Product Management Digital,95,2100,online,93.4
+14,tradicional,producao,iniciante,Lean Manufacturing,55,450,presencial,83.9
+15,tech_avancado,mobile,avancado,React Native Avancado,85,1900,online,92.1
+16,digital_intermediario,consultoria,intermediario,Business Intelligence,75,1400,online,89.2
+17,tradicional,juridico,intermediario,Direito Digital,60,800,hibrido,86.5
+18,tech_avancado,design,avancado,Design Systems,70,1600,online,91.3
+19,tradicional,manutencao,iniciante,Manutencao Preditiva,50,400,presencial,84.8
+20,tech_avancado,analytics,avancado,Big Data Engineering,115,2600,online,95.7
+21,digital_intermediario,comercio,intermediario,E-commerce Strategy,80,1300,online,88.4
+22,digital_intermediario,comunicacao,intermediario,Marketing de Conteudo,55,950,hibrido,87.8
+23,tradicional,seguranca,iniciante,Seguranca do Trabalho Digital,40,350,presencial,83.2
+24,tech_avancado,ia,avancado,Computer Vision,105,2300,online,96.8
+25,digital_intermediario,qualidade,intermediario,Six Sigma Digital,70,1250,online,89.7
+26,tech_avancado,ecommerce,avancado,Plataformas de E-commerce,75,1700,online,92.6
+27,tradicional,transporte,iniciante,Logistica Urbana,35,300,presencial,81.5
+28,tech_avancado,pesquisa,avancado,Metodologia de Pesquisa em IA,90,2000,online,94.2
+29,digital_intermediario,projetos,intermediario,Agile e Scrum Avancado,60,1100,online,88.1
+30,tradicional,estoque,iniciante,Gestao de Estoque,45,400,presencial,82.9
+31,tech_avancado,mobile,avancado,Flutter Development,80,1850,online,93.1
+32,digital_intermediario,supply_chain,intermediario,Supply Chain Analytics,85,1450,online,90.1
+33,tradicional,atendimento,iniciante,Experiencia do Cliente,40,300,presencial,83.6
+34,tech_avancado,cloud,avancado,AWS Solutions Architect,120,2800,online,97.1
+35,digital_intermediario,estrategia,intermediario,Planejamento Estrategico Digital,75,1350,hibrido,89.8
+36,digital_intermediario,conteudo,intermediario,SEO e Content Strategy,55,900,online,87.2
+37,tradicional,portaria,iniciante,Atendimento e Recepcao,30,250,presencial,80.4
+38,tech_avancado,blockchain,avancado,Smart Contracts Development,95,2250,online,95.3
+39,digital_intermediario,controladoria,intermediario,Controladoria Digital,70,1300,online,88.7
+40,digital_intermediario,crm,intermediario,Customer Success Management,60,1050,hibrido,87.9
+41,tradicional,comercio,iniciante,Varejo Moderno,45,350,presencial,82.3
+42,tech_avancado,data_science,avancado,Advanced Statistics for DS,100,2400,online,96.5
+43,digital_intermediario,compliance,intermediario,GRC e Compliance Digital,65,1200,online,89.3
+44,tech_avancado,frontend,avancado,Micro Frontends,75,1750,online,92.8
+45,tradicional,servicos_gerais,iniciante,Gestao de Facilities,35,280,presencial,81.1
+46,tech_avancado,backend,avancado,Microservices Architecture,110,2500,online,95.9
+47,digital_intermediario,auditoria,intermediario,Auditoria de TI,70,1400,online,88.5
+48,digital_intermediario,seo,intermediario,SEO Tecnico Avancado,55,1000,online,87.6
+49,tradicional,montagem,iniciante,Automacao na Producao,50,450,presencial,83.7
+50,tech_avancado,devops,avancado,Kubernetes e Containers,105,2350,online,96.1
+51,tech_avancado,bi,avancado,Power BI e Tableau Avancado,80,1800,online,93.7
+52,tradicional,vigilancia,iniciante,Seguranca Eletronica,40,320,presencial,82.1
+53,tech_avancado,inovacao,avancado,Design Thinking Digital,85,1950,online,94.5
+54,digital_intermediario,planejamento,intermediario,OKRs e Gestao de Metas,55,950,hibrido,88.2
+55,tech_avancado,cybersecurity,avancado,Ethical Hacking,115,2700,online,96.7
+56,tradicional,motorista,iniciante,Direcao Defensiva Digital,30,280,presencial,80.8
+57,tech_avancado,growth,avancado,Growth Hacking Avancado,70,1650,online,92.4
+58,digital_intermediario,processos,intermediario,BPM e Automacao de Processos,75,1350,online,89.1
+59,tech_avancado,infraestrutura,avancado,Site Reliability Engineering,100,2300,online,95.2
+60,tradicional,alimentacao,iniciante,Gestao de Cozinha Industrial,40,300,presencial,81.9
+61,tech_avancado,machine_learning,avancado,Natural Language Processing,120,2650,online,97.3
+62,digital_intermediario,pricing,intermediario,Revenue Management,65,1150,online,88.6
+63,tradicional,portaria,iniciante,Controle de Acesso Digital,35,270,presencial,80.6
+64,tech_avancado,quality_assurance,avancado,Test Automation,90,2000,online,93.9
+65,digital_intermediario,trade_marketing,intermediario,Trade Marketing Digital,60,1100,hibrido,87.5
+66,tradicional,manutencao_predial,iniciante,Gestao Predial,40,300,presencial,81.7
+67,tech_avancado,integracao,avancado,Enterprise Integration Patterns,95,2200,online,94.7
+68,digital_intermediario,fusoes,intermediario,M&A Analytics,80,1600,online,90.3
+69,digital_intermediario,performance,intermediario,Web Performance Optimization,55,950,online,87.3
+70,tradicional,entrega,iniciante,Logistica de Ultima Milha,35,290,presencial,80.9
+71,tech_avancado,iot,avancado,IoT e Edge Computing,105,2400,online,96.4
+72,digital_intermediario,categoria,intermediario,Category Management,70,1250,hibrido,88.8
+73,tradicional,coleta,iniciante,Gestao de Residuos,30,250,presencial,79.8
+74,tech_avancado,robotica,avancado,Robotics Process Automation,110,2550,online,97.5
+75,digital_intermediario,merchandising,intermediario,Visual Merchandising Digital,60,1050,online,87.1
+76,tech_avancado,fullstack,avancado,Full Stack MERN/MEAN,100,2300,online,94.9
+77,tradicional,operacao,iniciante,Operacao de Equipamentos,45,350,presencial,82.5
+78,tech_avancado,api,avancado,API Design e GraphQL,85,1900,online,93.5
+79,digital_intermediario,investimentos,intermediario,Analise de Investimentos,75,1400,online,89.5
+80,tech_avancado,automacao,avancado,Python Automation,80,1800,online,92.9
+81,tradicional,jardinagem,iniciante,Paisagismo Urbano,35,280,presencial,80.2
+82,tech_avancado,nlp,avancado,Transformers e BERT,115,2600,online,97.2
+83,digital_intermediario,franquias,intermediario,Gestao de Franquias,65,1200,hibrido,88.3
+84,tech_avancado,data_pipeline,avancado,Data Engineering Spark,105,2450,online,95.8
+85,tradicional,administracao_predial,iniciante,Administracao de Condominios,40,320,presencial,81.4
+86,tech_avancado,quantum,avancado,Quantum Computing,130,3000,online,98.1
+87,digital_intermediario,expansao,intermediario,Estrategia de Expansao,70,1300,online,89.4
+88,tech_avancado,plataforma,avancado,Platform Engineering,110,2500,online,96.3
+89,tradicional,auxiliar,iniciante,Multifuncional em Servicos,30,250,presencial,79.5
+90,tech_avancado,realidade_virtual,avancado,Unity e Unreal Engine,100,2350,online,94.6
+91,digital_intermediario,omnichannel,intermediario,Omnichannel Strategy,75,1350,hibrido,89.9
+92,tradicional,ascensorista,iniciante,Operacao de Elevadores,25,220,presencial,78.9
+93,tech_avancado,edge_computing,avancado,Edge AI e 5G,115,2650,online,96.9
+94,digital_intermediario,comercio_exterior,intermediario,Comercio Internacional Digital,70,1250,online,88.4
+95,tech_avancado,microservicos,avancado,Service Mesh e Istio,105,2400,online,95.6
+96,tradicional,copa,iniciante,Servicos de Copa,28,230,presencial,78.2
+97,tech_avancado,observabilidade,avancado,Observability Engineering,95,2200,online,94.3
+98,digital_intermediario,private_equity,intermediario,Private Equity Analytics,85,1700,online,90.8
+99,tech_avancado,sre,avancado,Chaos Engineering,120,2750,online,97.6
+100,tradicional,almoxarifado,iniciante,Gestao de Almoxarifado Digital,45,380,presencial,82.8
