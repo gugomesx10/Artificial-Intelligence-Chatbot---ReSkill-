@@ -1,0 +1,179 @@
+# INFORMAÇÕES DO GRUPO - ReSkill+ AI & Chatbot
+
+## 👥 Membros do Grupo
+
+ **Gustavo Gomes Martins** - RM: 555999
+   - Responsabilidades: Desenvolvimento dos modelos de Machine Learning
+
+---
+
+## 📋 Descrição do Projeto
+
+O **ReSkill+** é uma plataforma de Inteligência Artificial desenvolvida para apoiar a requalificação profissional de trabalhadores em risco de automação. O projeto utiliza modelos preditivos e um chatbot inteligente para oferecer orientação personalizada sobre trilhas de estudo e desenvolvimento de competências.
+
+### 🎯 Objetivos
+
+- **Classificar perfis de trabalhadores** em três categorias:
+  - Tech Avançado: Profissionais com alta qualificação digital
+  - Digital Intermediário: Profissionais em transição digital
+  - Tradicional: Profissionais que precisam de requalificação urgente
+
+- **Prever o risco de automação** de ocupações baseado em fatores como:
+  - Repetitividade das tarefas
+  - Criatividade requerida
+  - Interação humana
+  - Complexidade técnica
+
+- **Segmentar trabalhadores** em grupos para recomendações personalizadas
+
+- **Recomendar cursos** alinhados ao perfil e necessidades de cada trabalhador
+
+- **Fornecer um chatbot** para orientação interativa sobre jornadas de requalificação
+
+---
+
+## 🚀 Modelos Desenvolvidos
+
+### 1. Classificação - Random Forest
+- **Objetivo**: Predizer o perfil do trabalhador
+- **Algoritmo**: Random Forest Classifier
+- **Features**: idade, escolaridade, anos de experiência, área de atuação, habilidades digitais, renda, setor
+- **Acurácia esperada**: > 85%
+
+### 2. Regressão - Gradient Boosting
+- **Objetivo**: Predizer o risco de automação (%)
+- **Algoritmo**: Gradient Boosting Regressor
+- **Features**: repetitividade, criatividade, interação humana, complexidade técnica, nível de educação
+- **Métricas**: MAE < 10%, R² > 0.80
+
+### 3. Agrupamento - KMeans
+- **Objetivo**: Segmentar trabalhadores em 4 grupos
+- **Algoritmo**: KMeans Clustering
+- **Features**: idade, experiência, habilidades digitais, renda, risco de automação
+- **Clusters identificados**:
+  - Cluster 0: Profissionais Tradicionais
+  - Cluster 1: Profissionais em Transição
+  - Cluster 2: Profissionais Digitais
+  - Cluster 3: Profissionais Seniores
+
+---
+
+## 🤖 Chatbot Inteligente
+
+O chatbot do ReSkill+ oferece:
+
+- Recomendações personalizadas de cursos
+- Avaliação de risco de automação
+- Orientação sobre trilhas de aprendizado
+- Informações sobre áreas em crescimento
+- Suporte interativo para requalificação
+
+**Intents principais**:
+- Saudação
+- Recomendação de cursos
+- Avaliação de risco
+- Orientação sobre qualificação
+- Ajuda e instruções
+
+---
+
+## 📊 Datasets Utilizados
+
+### 1. perfil_trabalhador.csv (100 registros)
+Contém informações sobre trabalhadores incluindo idade, escolaridade, experiência, área de atuação, habilidades digitais, renda e setor.
+
+### 2. risco_automacao.csv (100 registros)
+Contém dados sobre ocupações e fatores que influenciam o risco de automação.
+
+### 3. cursos_recomendacao.csv (100 registros)
+Base de cursos com informações sobre perfil alvo, área, nível, duração, custo e score de relevância.
+
+---
+
+## 🌐 API REST - Endpoints
+
+A API Flask fornece os seguintes endpoints:
+
+### Informações e Status
+- `GET /` - Informações da API
+- `GET /health` - Status de saúde
+
+### Modelos Preditivos
+- `POST /api/perfil/prever` - Predição de perfil
+- `POST /api/risco/prever` - Predição de risco de automação
+- `POST /api/cluster/segmentar` - Segmentação em clusters
+
+### Recomendações e Cursos
+- `POST /api/cursos/recomendar` - Recomendação personalizada
+- `GET /api/cursos/listar` - Listar todos os cursos
+
+### Chatbot
+- `POST /api/chatbot/interagir` - Interação com chatbot
+
+### Estatísticas
+- `GET /api/estatisticas` - Estatísticas dos dados
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Python 3.8+**
+- **Flask** - Framework web para API REST
+- **Scikit-learn** - Biblioteca de Machine Learning
+- **Pandas** - Manipulação de dados
+- **NumPy** - Computação numérica
+- **Matplotlib/Seaborn** - Visualização de dados
+- **Jupyter Notebook** - Desenvolvimento e documentação
+
+---
+
+## 📝 Metodologia de Desenvolvimento
+
+1. **Coleta e Preparação de Dados**: Criação de datasets sintéticos representativos
+2. **Análise Exploratória**: Estudo de distribuições e correlações
+3. **Engenharia de Features**: Transformação e codificação de variáveis
+4. **Treinamento de Modelos**: Implementação e otimização de algoritmos
+5. **Avaliação**: Métricas de desempenho e validação
+6. **Deploy**: API REST para consumo dos modelos
+7. **Documentação**: Notebooks e README detalhados
+
+---
+
+## 🎓 Aprendizados e Contribuições
+
+Este projeto demonstra:
+
+- Aplicação prática de Machine Learning em problemas sociais
+- Desenvolvimento de sistemas de recomendação
+- Criação de APIs RESTful com Flask
+- Análise e visualização de dados
+- Integração de múltiplos modelos de IA
+- Desenvolvimento de chatbots baseados em regras
+
+---
+
+## 🔮 Melhorias Futuras
+
+- Implementar modelos de Deep Learning para o chatbot (NLP)
+- Adicionar autenticação e autorização na API
+- Criar interface web (frontend) para visualização
+- Integrar com plataformas de cursos reais (APIs externas)
+- Implementar sistema de feedback para melhorar recomendações
+- Adicionar testes automatizados
+- Deploy em cloud (AWS, Azure, Google Cloud)
+
+---
+
+## 📅 Data de Entrega
+
+**Novembro de 2025**
+
+---
+
+## 📧 Contato
+
+Para dúvidas ou sugestões sobre o projeto, entre em contato com os membros do grupo.
+
+---
+
+**Developed with ❤️ by ReSkill+ Team**
