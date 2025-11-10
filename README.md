@@ -5,6 +5,63 @@
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3.2-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+**Desenvolvido por:** Gustavo Gomes Martins - RM 555999
+
+---
+
+## 🚀 GUIA RÁPIDO DE INSTALAÇÃO E EXECUÇÃO
+
+### Passo 1: Instalar Python
+1. Baixe Python 3.8+ em: https://www.python.org/downloads/
+2. Durante a instalação, **marque a opção "Add Python to PATH"**
+3. Reinicie o terminal após a instalação
+
+### Passo 2: Instalar Dependências
+```bash
+pip install flask flask-cors pandas numpy scikit-learn matplotlib seaborn jupyter
+```
+
+### Passo 3: Gerar os Modelos de Machine Learning
+```bash
+# Navegar até a pasta notebooks
+cd notebooks
+
+# Executar o script para treinar os modelos
+python gerar_modelos.py
+```
+Isso criará 5 arquivos .pickle na pasta `models/`:
+- classificador_perfil.pickle
+- regressor_risco.pickle  
+- clustering_kmeans.pickle
+- encoders.pickle
+- scaler_cluster.pickle
+
+### Passo 4: Executar a API
+```bash
+# Voltar e ir para a pasta api
+cd ..\api
+
+# Iniciar o servidor Flask
+python app.py
+```
+
+Você verá:
+```
+✅ Modelos carregados com sucesso!
+🚀 API pronta para uso!
+📡 Acesse: http://localhost:5000
+```
+
+### Passo 5: Testar a API
+Abra o navegador em: **http://localhost:5000**
+
+Ou execute em outro terminal:
+```bash
+python api/test_api.py
+```
+
+---
+
 ## 📖 Sobre o Projeto
 
 O **ReSkill+** é uma plataforma de Inteligência Artificial desenvolvida para apoiar a requalificação profissional de trabalhadores em risco de automação. Utilizando modelos de Machine Learning e um chatbot inteligente, o sistema oferece:

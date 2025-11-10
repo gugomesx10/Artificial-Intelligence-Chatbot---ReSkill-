@@ -1,0 +1,268 @@
+# 🚀 PASSO A PASSO COMPLETO - ReSkill+ AI & Chatbot
+
+**Desenvolvido por:** Gustavo Gomes Martins - RM 555999
+
+---
+
+## ✅ CHECKLIST DE EXECUÇÃO
+
+### ETAPA 1: Verificar Instalação do Python
+
+```powershell
+# Abra o PowerShell e teste:
+python --version
+```
+
+**Se aparecer erro "comando não encontrado":**
+1. Baixe Python em: https://www.python.org/downloads/
+2. Durante instalação, **MARQUE** "Add Python to PATH"
+3. Reinicie o PowerShell
+4. Teste novamente: `python --version`
+
+---
+
+### ETAPA 2: Instalar Bibliotecas Necessárias
+
+```powershell
+# Instale todas as dependências de uma vez:
+pip install flask flask-cors pandas numpy scikit-learn matplotlib seaborn jupyter
+```
+
+**Aguarde a instalação completar** (pode demorar alguns minutos)
+
+---
+
+### ETAPA 3: Gerar os Modelos de Machine Learning
+
+```powershell
+# Navegue até a pasta do projeto
+cd "C:\Users\gustavo.gomes\Documents\ChatBot - GS\Artificial-Intelligence-Chatbot---ReSkill-"
+
+# Entre na pasta notebooks
+cd notebooks
+
+# Execute o script para treinar os modelos
+python gerar_modelos.py
+```
+
+**O que vai acontecer:**
+- O script vai carregar os 3 CSVs da pasta `data/`
+- Vai treinar 3 modelos de Machine Learning
+- Vai salvar 5 arquivos .pickle na pasta `models/`
+
+**Você deve ver:**
+```
+Carregando dados...
+Treinando modelo de classificação...
+Treinando modelo de regressão...
+Treinando modelo de clustering...
+Salvando modelos...
+✓ classificador_perfil.pickle
+✓ regressor_risco.pickle
+✓ clustering_kmeans.pickle
+✓ encoders.pickle
+✓ scaler_cluster.pickle
+✅ Todos os modelos foram salvos com sucesso!
+```
+
+---
+
+### ETAPA 4: Verificar se os Modelos Foram Criados
+
+```powershell
+# Volte para a raiz do projeto
+cd ..
+
+# Liste os arquivos na pasta models
+dir models
+```
+
+**Você deve ver 5 arquivos:**
+- classificador_perfil.pickle
+- regressor_risco.pickle
+- clustering_kmeans.pickle
+- encoders.pickle
+- scaler_cluster.pickle
+
+---
+
+### ETAPA 5: Iniciar a API Flask
+
+```powershell
+# Entre na pasta api
+cd api
+
+# Execute o servidor
+python app.py
+```
+
+**Você deve ver:**
+```
+============================================================
+Inicializando API ReSkill+...
+============================================================
+✅ Modelos carregados com sucesso!
+
+🚀 API pronta para uso!
+📡 Acesse: http://localhost:5000
+============================================================
+ * Running on http://0.0.0.0:5000
+```
+
+**⚠️ NÃO FECHE ESTE TERMINAL!** A API precisa ficar rodando.
+
+---
+
+### ETAPA 6: Testar a API
+
+**Opção 1 - No Navegador:**
+1. Abra seu navegador
+2. Acesse: http://localhost:5000
+3. Você verá as informações da API em JSON
+
+**Opção 2 - Testando com Script Python:**
+1. Abra um **NOVO terminal** (mantenha o anterior rodando)
+2. Execute:
+```powershell
+cd "C:\Users\gustavo.gomes\Documents\ChatBot - GS\Artificial-Intelligence-Chatbot---ReSkill-"
+python api/test_api.py
+```
+
+Isso vai testar todos os 10 endpoints automaticamente!
+
+---
+
+## 📋 ESTRUTURA FINAL DO PROJETO
+
+```
+Artificial-Intelligence-Chatbot---ReSkill-/
+│
+├── 📁 data/                                    ✅ (10 pontos)
+│   ├── perfil_trabalhador.csv                 (100 registros)
+│   ├── risco_automacao.csv                    (100 registros)
+│   └── cursos_recomendacao.csv                (100 registros)
+│
+├── 📁 notebooks/                               ✅ (60 pontos)
+│   ├── modelos_ia_reskill.ipynb               (Pipeline completo)
+│   └── gerar_modelos.py                       (Script de treinamento)
+│
+├── 📁 models/                                  ✅ (10 pontos)
+│   ├── classificador_perfil.pickle
+│   ├── regressor_risco.pickle
+│   ├── clustering_kmeans.pickle
+│   ├── encoders.pickle
+│   └── scaler_cluster.pickle
+│
+├── 📁 api/                                     ✅ (20 pontos)
+│   ├── app.py                                 (API Flask)
+│   ├── requirements.txt
+│   └── test_api.py
+│
+├── 📄 GRUPO.txt                                ✅
+├── 📄 README.md                                ✅
+└── 📄 .gitignore
+```
+
+**TOTAL: 100 PONTOS ✅**
+
+---
+
+## 🧪 TESTANDO OS ENDPOINTS DA API
+
+Com a API rodando, você pode testar cada endpoint:
+
+### 1. Informações da API
+```
+http://localhost:5000/
+```
+
+### 2. Health Check
+```
+http://localhost:5000/health
+```
+
+### 3. Predição de Perfil (POST)
+Use o test_api.py ou Postman/Insomnia
+
+### 4. Predição de Risco (POST)
+Use o test_api.py ou Postman/Insomnia
+
+### 5. Chatbot (POST)
+Use o test_api.py ou Postman/Insomnia
+
+---
+
+## ❌ SOLUCIONANDO PROBLEMAS COMUNS
+
+### Erro: "python não é reconhecido"
+**Solução:** Instale o Python e adicione ao PATH
+
+### Erro: "ModuleNotFoundError: No module named 'flask'"
+**Solução:**
+```powershell
+pip install flask flask-cors pandas numpy scikit-learn
+```
+
+### Erro: "FileNotFoundError: models/classificador_perfil.pickle"
+**Solução:** Execute o script para gerar os modelos:
+```powershell
+cd notebooks
+python gerar_modelos.py
+```
+
+### Erro: "Address already in use"
+**Solução:** A porta 5000 já está em uso. Feche outros programas ou mude a porta no app.py
+
+### API não carrega os modelos
+**Solução:** Certifique-se que os 5 arquivos .pickle existem na pasta `models/`
+
+---
+
+## 🎯 VALIDAÇÃO FINAL
+
+Antes de entregar, verifique:
+
+- [x] 3 arquivos CSV em `data/` ✅
+- [x] 1 notebook completo em `notebooks/` ✅
+- [x] 5 arquivos .pickle em `models/` ✅
+- [x] 1 arquivo app.py funcionando em `api/` ✅
+- [x] Arquivo GRUPO.txt com seu nome ✅
+- [x] README.md completo ✅
+
+---
+
+## 💡 RESUMO DOS COMANDOS
+
+```powershell
+# 1. Instalar dependências
+pip install flask flask-cors pandas numpy scikit-learn matplotlib seaborn jupyter
+
+# 2. Gerar modelos
+cd notebooks
+python gerar_modelos.py
+cd ..
+
+# 3. Iniciar API
+cd api
+python app.py
+
+# 4. Testar (em outro terminal)
+python api/test_api.py
+```
+
+---
+
+## 📞 PRONTO!
+
+Se você seguiu todos os passos:
+- ✅ Os modelos foram treinados
+- ✅ A API está rodando
+- ✅ Os testes passaram
+- ✅ Projeto completo para entrega!
+
+**BOA SORTE! 🚀**
+
+---
+
+**Desenvolvido por Gustavo Gomes Martins - RM 555999**
+**Novembro 2025**
